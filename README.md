@@ -1,1 +1,1 @@
-# fictional-telegram-lab-delta
+# fictional-telegram-dev-delta

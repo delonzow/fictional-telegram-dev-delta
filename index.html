@@ -4,12 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lab-delta</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <select id="favorite">
-        <option disabled>select your favorite!!!</option>
-    </select>
+    <main>
+        <h1>Build Your Profile</h1>
 
+        <form id="profile-form">
+            <label for="name">Name</label>
+            <input id="name" type="text" required>
+
+            <label for="favorite">Favorite</label>
+            <select id="favorite" required>
+                <option value="" disabled selected>Choose one</option>
+            </select>
+
+            <label for="comment">Comment</label>
+            <textarea id="comment" rows="3"></textarea>
+
+            <button type="submit">Build My Profile</button>
+        </form>
+
+        <h2>Your Profile</h2>
+        <p id="profile-output">Your profile will appear here.</p>
+
+        <h2>A Random Dog</h2>
+        <img id="dog-image" alt="A random dog">
+    </main>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
